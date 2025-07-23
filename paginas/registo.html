@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/icon.webp">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Registar-se</title>
+</head>
+<body>
+    <header>
+        <section id="page-title">
+            <p>PROJECTO</p>
+            <h1><a href="../index.html">Crowdfunding</a></h1>
+        </section>
+
+        <section id="nav-area">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main class="set-bg">
+        <section id="form-container">
+            <section class="form-register-header">
+                <img src="../imagens/person.svg">
+                <h2>Criar Nova Conta</h2>
+            </section>
+
+            <form action="#">
+                <section class="input-label">
+                    <label for="name">Nome Completo</label>
+                    <input class="" type="text" name="name" id="name" placeholder="Ex: Uzumaki Naruto" required>
+                </section>
+
+                <section class="input-label">
+                    <label for="bi">Bilhete de Identidade</label>
+                    <input class="ibg ibg-person-card" type="text" name="bi" id="bi" placeholder="123456789AA044" pattern="\d{9}[a-zA-Z]{2}\d{3}" required>
+                </section>
+
+                <section class="input-label">
+                    <label for="email">Email</label>
+                    <input class="ibg ibg-email" type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+                </section>
+
+                <section class="input-label">
+                    <label for="birth">Data de Nascimento</label>
+                    <input class="form-control" type="date" name="birth" id="birth" placeholder="Data" required>
+                </section>
+
+                <section class="input-label">
+                    <label for="address">Endereço</label>
+                    <input class="ibg ibg-address" type="address" name="address" id="address" placeholder="Ex: Huambo, Angola" required>
+                </section>
+            
+                <section class="input-label">
+                    <label for="password">Palavra-Passe</label>
+                    <input class="ibg ibg-key" type="password" name="password" id="password" required>
+                </section>
+
+                <section class="input-label">
+                    <label for="password2">Inserir Novamente a Palavra-Passe</label>
+                    <input class="ibg ibg-key" type="password" name="password2" id="password2" required>
+                </section>
+
+                <section class="btn-list fill">
+                    <input class="btn btn-outline-pb" type="submit" value="Criar Conta">
+                    <input class="btn btn-outline-red" type="reset" value="Limpar">
+                </section>
+            </form>
+        </section>        
+    </main>
+
+    <footer>
+        <p>Projecto desenvolvido por <strong><em>Boaventura Chimuco</em></strong>, para o exame de programação web.</p>
+        <p id="author-email"><b>Email</b>: <a href="mail:bs.cordeiro.any@gmail.com">bs.cordeiro.any@gmail.com</a></p>
+        <p><i>Junho, 2025</i></p>
+    </footer>
+</body>
+</html>
